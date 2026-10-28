@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#100e0d">
+  <title>Forja Sombria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game">
+    <canvas id="world"></canvas>
+    <div id="vignette"></div>
+
+    <header class="topbar">
+      <div>
+        <b>FORJA SOMBRIA</b>
+        <small>Crônicas do Ferro Antigo</small>
+      </div>
+      <div class="stats">
+        <span>◆ <b id="gold">25</b> ouro</span>
+        <span>✦ Nv. <b id="level">1</b></span>
+      </div>
+    </header>
+
+    <section class="quest">
+      <b>MISSÃO ATUAL</b>
+      <p id="questText">Fale com Aldric, o viajante.</p>
+    </section>
+
+    <div id="hint">Explore a oficina e aproxime-se dos objetos.</div>
+    <div id="crosshair">＋</div>
+    <div id="toast"></div>
+
+    <section id="panel" class="panel hidden">
+      <button id="closePanel" class="close">✕</button>
+      <div id="panelTag" class="eyebrow">OFICINA</div>
+      <h2 id="panelTitle">Forja</h2>
+      <p id="panelDesc"></p>
+      <div id="panelContent"></div>
+    </section>
+
+    <div class="controls">
+      <div id="stick" class="stick">
+        <div id="knob"></div>
+      </div>
+
+      <div class="rightControls">
+        <button id="lookBtn" class="round">◉<small>VIRAR</small></button>
+        <button id="actionBtn" class="action">INTERAGIR</button>
+      </div>
+    </div>
+
+    <div class="bottomTip">
+      ARRASTE À ESQUERDA PARA ANDAR • À DIREITA PARA OLHAR
+    </div>
+  </main>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
